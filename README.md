@@ -7,6 +7,8 @@ command like VoiceAttack does.
 Started as a Helldivers 2 stratagem caller, structured so any game can be
 added as its own profile.
 
+This is really early in development, not for public use.
+
 ## How it works
 
 1. Hold the push-to-talk key (`ptt_key` in `settings.yaml`) and speak.
