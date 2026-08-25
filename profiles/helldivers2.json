@@ -2,6 +2,19 @@
   "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems (Offensive + Supply sections, confirmed) and cross-referenced mission-stratagem sources. VERIFY each code against the in-game display before relying on it in a mission. The Defensive Emplacements section (Anti-Tank Emplacement, Tesla Tower, Machine Gun Emplacement, HMG Emplacement, EMS Mortar Sentry, Rocket Sentry, Incendiary Mines, AA Emplacement, etc.) was not fully captured from the source page and needs to be added manually - check the in-game codes and add entries in the same format. Two entries (SOS Beacon, Upload Data) have a _verify field because sources disagreed on their codes. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better.",
   "commands": [
     {
+      "name": "Stim",
+      "key": "v",
+      "aliases": [
+        "stim",
+        "heal",
+        "use stim",
+        "stim pack",
+        "heal up",
+        "stim myself",
+        "pop a stim"
+      ]
+    },
+    {
       "name": "Orbital Precision Strike",
       "code": "RRU",
       "aliases": [

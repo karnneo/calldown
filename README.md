@@ -79,6 +79,19 @@ Each entry in a profile's `commands` list looks like:
 - `aliases`: as many natural phrasings as you can think of. More variety
   here = better semantic recognition — you don't need exact matches.
 
+For an action with its own dedicated keybind (not entered through the
+stratagem menu, e.g. Stim) use `key` instead of `code`:
+
+```json
+{
+  "name": "Stim",
+  "key": "v",
+  "aliases": ["stim", "heal", "use stim", "heal up"]
+}
+```
+
+- `key`: the single key to tap directly, matching your in-game keybind.
+
 ## Adding a new game
 
 1. Create `profiles/<game-name>.json` with a `commands` list in the same

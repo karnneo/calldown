@@ -83,7 +83,10 @@ def main():
                 f"[match] '{text}' -> {result.command['name']} "
                 f"(score={result.score:.2f})"
             )
-            dispatcher.execute(result.command["code"])
+            if "code" in result.command:
+                dispatcher.execute(result.command["code"])
+            else:
+                dispatcher.press_key(result.command["key"])
 
         except KeyboardInterrupt:
             print("\n[exit] shutting down")

@@ -55,3 +55,10 @@ class Dispatcher:
             self._wait(self.release_delay)
         finally:
             pydirectinput.keyUp(self.menu_key)
+
+    def press_key(self, key: str):
+        """Tap a single keybind directly (no stratagem menu) — e.g. Stim."""
+        print(f"[dispatch] pressing key: {key}")
+        pydirectinput.keyDown(key)
+        self._wait(self.press_duration)
+        pydirectinput.keyUp(key)
