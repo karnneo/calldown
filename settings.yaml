@@ -1,0 +1,39 @@
+# --- Active game profile ---
+profile: "helldivers2"   # matches a filename in profiles/ (without .json)
+
+# --- Push-to-talk ---
+ptt_device: "mouse"    # "keyboard" or "mouse"
+ptt_key: "x2"            # mouse: "left", "right", "middle", "x" (Mouse 4/back), "x2" (Mouse 5/forward)
+                        # keyboard: any key name, e.g. "f13" — pick something you never hit by accident.
+
+# --- Whisper STT ---
+whisper_model: "small"          # tiny/base/small/medium/distil-large-v3. "small" is a good
+                                 # latency/accuracy balance for short commands on a gaming GPU.
+whisper_device: "cuda"          # "cuda" or "cpu"
+whisper_compute_type: "float16" # float16 on GPU, int8 on CPU
+
+# --- Intent matching ---
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+confidence_threshold: 0.55   # below this, the command is rejected rather than guessed
+ambiguity_margin: 0.05       # if top-2 matches are within this gap, reject rather than guess
+
+# --- Game input timing ---
+menu_key: "ctrl"         # Helldivers 2 default stratagem-menu hold key (PC)
+direction_keys:          # rebound to arrow keys — make sure this matches
+                         # whatever you've set as the stratagem input scheme in-game
+  U: "up"
+  D: "down"
+  L: "left"
+  R: "right"
+
+# All timings below are per key-input. Increase these if the game is missing
+# or misreading inputs (too fast for it to register); decrease for speed once
+# you've confirmed reliability. Roughly human-speed defaults to start.
+key_press_duration_ms: 70   # how long each directional key is held down
+key_gap_ms: 110              # pause between releasing one key and pressing the next
+menu_settle_delay_ms: 120    # pause after opening the menu, before the first direction
+menu_release_delay_ms: 150   # pause after the last direction, before releasing the menu key
+jitter_ms: 20                 # random +/- variance added to every delay above, for a less robotic cadence (0 to disable)
+
+# --- Logging ---
+log_unmatched_to: "unmatched_utterances.log"   # review this to add missing phrasings later

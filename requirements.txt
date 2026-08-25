@@ -1,0 +1,8 @@
+faster-whisper
+sentence-transformers
+sounddevice
+numpy
+keyboard
+mouse
+pydirectinput
+PyYAML

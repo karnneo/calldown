@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Logs generated at runtime
+unmatched_utterances.log
+
+# Downloaded model caches (if you ever configure a local cache dir)
+*.pt
+*.bin
+models/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

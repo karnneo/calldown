@@ -1,0 +1,848 @@
+{
+  "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems (Offensive + Supply sections, confirmed) and cross-referenced mission-stratagem sources. VERIFY each code against the in-game display before relying on it in a mission. The Defensive Emplacements section (Anti-Tank Emplacement, Tesla Tower, Machine Gun Emplacement, HMG Emplacement, EMS Mortar Sentry, Rocket Sentry, Incendiary Mines, AA Emplacement, etc.) was not fully captured from the source page and needs to be added manually - check the in-game codes and add entries in the same format. Two entries (SOS Beacon, Upload Data) have a _verify field because sources disagreed on their codes. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better.",
+  "commands": [
+    {
+      "name": "Orbital Precision Strike",
+      "code": "RRU",
+      "aliases": [
+        "orbital precision strike",
+        "precision strike",
+        "orbital precision",
+        "snipe it from orbit"
+      ]
+    },
+    {
+      "name": "Orbital Gatling Barrage",
+      "code": "RDLUU",
+      "aliases": [
+        "orbital gatling barrage",
+        "gatling barrage",
+        "orbital gatling"
+      ]
+    },
+    {
+      "name": "Orbital Gas Strike",
+      "code": "RRDR",
+      "aliases": [
+        "orbital gas strike",
+        "gas strike",
+        "orbital gas",
+        "throw gas",
+        "gas them out"
+      ]
+    },
+    {
+      "name": "Orbital 120mm HE Barrage",
+      "code": "RRDLRD",
+      "aliases": [
+        "orbital 120mm he barrage",
+        "120 barrage",
+        "120mm barrage",
+        "small barrage"
+      ]
+    },
+    {
+      "name": "Orbital Airburst Strike",
+      "code": "RRR",
+      "aliases": [
+        "orbital airburst strike",
+        "airburst strike",
+        "orbital airburst"
+      ]
+    },
+    {
+      "name": "Orbital Smoke Strike",
+      "code": "RRDU",
+      "aliases": [
+        "orbital smoke strike",
+        "orbital smoke",
+        "smoke strike",
+        "pop smoke"
+      ]
+    },
+    {
+      "name": "Orbital EMS Strike",
+      "code": "RRLD",
+      "aliases": [
+        "orbital ems strike",
+        "ems strike",
+        "orbital ems",
+        "stun strike"
+      ]
+    },
+    {
+      "name": "Orbital 380mm HE Barrage",
+      "code": "RDUULDD",
+      "aliases": [
+        "orbital 380mm he barrage",
+        "380 barrage",
+        "380mm barrage",
+        "large barrage",
+	"fuck everything up"
+      ]
+    },
+    {
+      "name": "Orbital Walking Barrage",
+      "code": "RDRDRD",
+      "aliases": [
+        "orbital walking barrage",
+        "walking barrage"
+      ]
+    },
+    {
+      "name": "Orbital Laser",
+      "code": "RDURD",
+      "aliases": [
+        "orbital laser",
+        "orbital laser",
+        "call the laser",
+	"finger of god"
+      ]
+    },
+    {
+      "name": "Orbital Napalm Barrage",
+      "code": "RRDLRU",
+      "aliases": [
+        "orbital napalm barrage",
+        "napalm barrage",
+        "orbital napalm",
+	"I love the smell"
+      ]
+    },
+    {
+      "name": "Orbital Railcannon Strike",
+      "code": "RUDDR",
+      "aliases": [
+        "orbital railcannon strike",
+        "railcannon",
+        "orbital railcannon",
+        "railcannon strike"
+      ]
+    },
+    {
+      "name": "Eagle Strafing Run",
+      "code": "URR",
+      "aliases": [
+        "eagle strafing run",
+        "strafing run",
+        "eagle strafe",
+	"Warthog goes BIRRRRRRRR"
+      ]
+    },
+    {
+      "name": "Eagle Airstrike",
+      "code": "URDR",
+      "aliases": [
+        "eagle airstrike",
+        "eagle airstrike",
+        "airstrike",
+        "call an airstrike",
+        "bomb that position"
+      ]
+    },
+    {
+      "name": "Eagle Cluster Bomb",
+      "code": "URDDR",
+      "aliases": [
+        "eagle cluster bomb",
+        "cluster bomb",
+        "eagle cluster"
+      ]
+    },
+    {
+      "name": "Eagle Smoke Strike",
+      "code": "URUD",
+      "aliases": [
+        "eagle smoke strike",
+        "eagle smoke",
+        "smoke it"
+      ]
+    },
+    {
+      "name": "Eagle Napalm Airstrike",
+      "code": "URDU",
+      "aliases": [
+        "eagle napalm airstrike",
+        "napalm airstrike",
+        "eagle napalm"
+      ]
+    },
+    {
+      "name": "Eagle 110mm Rocket Pods",
+      "code": "URUL",
+      "aliases": [
+        "eagle 110mm rocket pods",
+        "rocket pods",
+        "eagle rockets"
+      ]
+    },
+    {
+      "name": "Eagle 500kg Bomb",
+      "code": "URDDD",
+      "aliases": [
+        "eagle 500kg bomb",
+        "500 kg bomb",
+        "big bomb",
+        "500kg",
+        "eagle five hundred",
+        "nuke it"
+      ]
+    },
+    {
+      "name": "MG-43 Machine Gun",
+      "code": "DLDUR",
+      "aliases": [
+        "mg-43 machine gun",
+        "machine gun",
+        "mg43"
+      ]
+    },
+    {
+      "name": "EAT-17 Expendable Anti-Tank",
+      "code": "DDLUR",
+      "aliases": [
+        "eat-17 expendable anti-tank",
+        "expendable anti tank",
+        "eat",
+        "eats"
+      ]
+    },
+    {
+      "name": "M-105 Stalwart",
+      "code": "DLDUUL",
+      "aliases": [
+        "m-105 stalwart",
+        "stalwart"
+      ]
+    },
+    {
+      "name": "LAS-98 Laser Cannon",
+      "code": "DLDUL",
+      "aliases": [
+        "las-98 laser cannon",
+        "laser cannon"
+      ]
+    },
+    {
+      "name": "APW-1 Anti-Materiel Rifle",
+      "code": "DLRUD",
+      "aliases": [
+        "apw-1 anti-materiel rifle",
+        "anti materiel rifle",
+        "amr"
+      ]
+    },
+    {
+      "name": "GR-8 Recoilless Rifle",
+      "code": "DLRRL",
+      "aliases": [
+        "gr-8 recoilless rifle",
+        "recoilless rifle",
+        "recoilless"
+      ]
+    },
+    {
+      "name": "GL-21 Grenade Launcher",
+      "code": "DLULD",
+      "aliases": [
+        "gl-21 grenade launcher",
+        "grenade launcher"
+      ]
+    },
+    {
+      "name": "FLAM-40 Flamethrower",
+      "code": "DLUDU",
+      "aliases": [
+        "flam-40 flamethrower",
+        "flamethrower",
+        "flame thrower"
+      ]
+    },
+    {
+      "name": "MG-206 Heavy Machine Gun",
+      "code": "DLUDD",
+      "aliases": [
+        "mg-206 heavy machine gun",
+        "heavy machine gun",
+        "hmg"
+      ]
+    },
+    {
+      "name": "AC-8 Autocannon",
+      "code": "DLDUUR",
+      "aliases": [
+        "ac-8 autocannon",
+        "autocannon"
+      ]
+    },
+    {
+      "name": "ARC-3 Arc Thrower",
+      "code": "DRDULL",
+      "aliases": [
+        "arc-3 arc thrower",
+        "arc thrower"
+      ]
+    },
+    {
+      "name": "LAS-99 Quasar Cannon",
+      "code": "DDULR",
+      "aliases": [
+        "las-99 quasar cannon",
+        "quasar cannon",
+        "quasar"
+      ]
+    },
+    {
+      "name": "RL-77 Airburst Rocket Launcher",
+      "code": "DUULR",
+      "aliases": [
+        "rl-77 airburst rocket launcher",
+        "airburst rocket launcher",
+        "airburst launcher"
+      ]
+    },
+    {
+      "name": "MLS-4X Commando",
+      "code": "DLUDR",
+      "aliases": [
+        "mls-4x commando",
+        "commando",
+        "commando launcher"
+      ]
+    },
+    {
+      "name": "FAF-14 Spear",
+      "code": "DDUDD",
+      "aliases": [
+        "faf-14 spear",
+        "spear",
+        "the spear launcher"
+      ]
+    },
+    {
+      "name": "RS-422 Railgun",
+      "code": "DRDULR",
+      "aliases": [
+        "rs-422 railgun",
+        "railgun"
+      ]
+    },
+    {
+      "name": "StA-X3 W.A.S.P. Launcher",
+      "code": "DDUDR",
+      "aliases": [
+        "sta-x3 w.a.s.p. launcher",
+        "wasp launcher",
+        "wasp"
+      ]
+    },
+    {
+      "name": "CQC-20 Breaching Hammer",
+      "code": "DLRLU",
+      "aliases": [
+        "cqc-20 breaching hammer",
+        "breaching hammer"
+      ]
+    },
+    {
+      "name": "PLAS-45 Epoch",
+      "code": "DLULR",
+      "aliases": [
+        "plas-45 epoch",
+        "epoch"
+      ]
+    },
+    {
+      "name": "MGX-42 Bullet Storm",
+      "code": "DLDRUL",
+      "aliases": [
+        "mgx-42 bullet storm",
+        "bullet storm"
+      ]
+    },
+    {
+      "name": "S-11 Speargun",
+      "code": "DRDLUR",
+      "aliases": [
+        "s-11 speargun",
+        "speargun"
+      ]
+    },
+    {
+      "name": "CQC-9 Defoliation Tool",
+      "code": "DLRRD",
+      "aliases": [
+        "cqc-9 defoliation tool",
+        "defoliation tool"
+      ]
+    },
+    {
+      "name": "GL-52 De-Escalator",
+      "code": "DRULR",
+      "aliases": [
+        "gl-52 de-escalator",
+        "de-escalator",
+        "de escalator"
+      ]
+    },
+    {
+      "name": "EAT-700 Expendable Napalm",
+      "code": "DDLUL",
+      "aliases": [
+        "eat-700 expendable napalm",
+        "expendable napalm"
+      ]
+    },
+    {
+      "name": "TX-41 Sterilizer",
+      "code": "DLUDL",
+      "aliases": [
+        "tx-41 sterilizer",
+        "sterilizer"
+      ]
+    },
+    {
+      "name": "EAT-411 Leveller",
+      "code": "DDLUD",
+      "aliases": [
+        "eat-411 leveller",
+        "leveller",
+        "leveler"
+      ]
+    },
+    {
+      "name": "GL-28 Belt-Fed Grenade Launcher",
+      "code": "DLULUU",
+      "aliases": [
+        "gl-28 belt-fed grenade launcher",
+        "belt fed grenade launcher"
+      ]
+    },
+    {
+      "name": "B/MD C4 Pack",
+      "code": "DRUURU",
+      "aliases": [
+        "b/md c4 pack",
+        "c4 pack",
+        "c4"
+      ]
+    },
+    {
+      "name": "MS-11 Solo Silo",
+      "code": "DURDD",
+      "aliases": [
+        "ms-11 solo silo",
+        "solo silo"
+      ]
+    },
+    {
+      "name": "B/FLAM-80 Cremator",
+      "code": "DDRDUU",
+      "aliases": [
+        "b/flam-80 cremator",
+        "cremator"
+      ]
+    },
+    {
+      "name": "M-1000 Maxigun",
+      "code": "DLRDUU",
+      "aliases": [
+        "m-1000 maxigun",
+        "maxigun"
+      ]
+    },
+    {
+      "name": "CQC-1 One True Flag",
+      "code": "DLRRU",
+      "aliases": [
+        "cqc-1 one true flag",
+        "one true flag"
+      ]
+    },
+    {
+      "name": "40-K Meltagun",
+      "code": "DLULLD",
+      "aliases": [
+        "40-k meltagun",
+        "meltagun"
+      ]
+    },
+    {
+      "name": "B-1 Supply Pack",
+      "code": "DLDUUD",
+      "aliases": [
+        "b-1 supply pack",
+        "supply pack"
+      ]
+    },
+    {
+      "name": "LIFT-850 Jump Pack",
+      "code": "DUUDU",
+      "aliases": [
+        "lift-850 jump pack",
+        "jump pack"
+      ]
+    },
+    {
+      "name": "SH-20 Ballistic Shield Backpack",
+      "code": "DLDDUL",
+      "aliases": [
+        "sh-20 ballistic shield backpack",
+        "ballistic shield backpack",
+        "ballistic shield"
+      ]
+    },
+    {
+      "name": "AX/AR-23 Guard Dog",
+      "code": "DULURD",
+      "aliases": [
+        "ax/ar-23 guard dog",
+        "guard dog"
+      ]
+    },
+    {
+      "name": "AX/LAS-5 Rover",
+      "code": "DULURR",
+      "aliases": [
+        "ax/las-5 rover",
+        "rover",
+        "guard dog rover"
+      ]
+    },
+    {
+      "name": "SH-32 Shield Generator Pack",
+      "code": "DULRLR",
+      "aliases": [
+        "sh-32 shield generator pack",
+        "shield generator pack",
+        "personal shield"
+      ]
+    },
+    {
+      "name": "SH-51 Directional Shield",
+      "code": "DULRUU",
+      "aliases": [
+        "sh-51 directional shield",
+        "directional shield"
+      ]
+    },
+    {
+      "name": "AX/FLAM-75 Hot Dog",
+      "code": "DULULL",
+      "aliases": [
+        "ax/flam-75 hot dog",
+        "hot dog"
+      ]
+    },
+    {
+      "name": "B-100 Portable Hellbomb",
+      "code": "DRUUU",
+      "aliases": [
+        "b-100 portable hellbomb",
+        "portable hellbomb"
+      ]
+    },
+    {
+      "name": "AX/ARC-3 K-9",
+      "code": "DULURL",
+      "aliases": [
+        "ax/arc-3 k-9",
+        "k9",
+        "k-9"
+      ]
+    },
+    {
+      "name": "LIFT-860 Hover Pack",
+      "code": "DUUDLR",
+      "aliases": [
+        "lift-860 hover pack",
+        "hover pack"
+      ]
+    },
+    {
+      "name": "AX/TX-13 Dog Breath",
+      "code": "DULURU",
+      "aliases": [
+        "ax/tx-13 dog breath",
+        "dog breath"
+      ]
+    },
+    {
+      "name": "LIFT-182 Warp Pack",
+      "code": "DLRDLR",
+      "aliases": [
+        "lift-182 warp pack",
+        "warp pack"
+      ]
+    },
+    {
+      "name": "M-103 Supply FRV",
+      "code": "LDLLDUR",
+      "aliases": [
+        "m-103 supply frv",
+        "supply frv"
+      ]
+    },
+    {
+      "name": "M-104 Incinerator FRV",
+      "code": "LDRLDUU",
+      "aliases": [
+        "m-104 incinerator frv",
+        "incinerator frv"
+      ]
+    },
+    {
+      "name": "EXO-49 Emancipator Exosuit",
+      "code": "LDRULDU",
+      "aliases": [
+        "exo-49 emancipator exosuit",
+        "emancipator exosuit",
+        "emancipator"
+      ]
+    },
+    {
+      "name": "EXO-45 Patriot Exosuit",
+      "code": "LDRULDD",
+      "aliases": [
+        "exo-45 patriot exosuit",
+        "patriot exosuit",
+        "patriot mech",
+        "mech"
+      ]
+    },
+    {
+      "name": "M-102 Gunner FRV",
+      "code": "LDRDRDU",
+      "aliases": [
+        "m-102 gunner frv",
+        "gunner frv"
+      ]
+    },
+    {
+      "name": "TD-220 Bastion MK XVI",
+      "code": "LDRDLDUDU",
+      "aliases": [
+        "td-220 bastion mk xvi",
+        "bastion"
+      ]
+    },
+    {
+      "name": "EXO-55 Breakthrough Exosuit",
+      "code": "LDRLRDU",
+      "aliases": [
+        "exo-55 breakthrough exosuit",
+        "breakthrough exosuit"
+      ]
+    },
+    {
+      "name": "EXO-51 Lumberer Exosuit",
+      "code": "LDRURLU",
+      "aliases": [
+        "exo-51 lumberer exosuit",
+        "lumberer exosuit"
+      ]
+    },
+    {
+      "name": "A/MG-43 Machine Gun Sentry",
+      "code": "DURRU",
+      "aliases": [
+        "a/mg-43 machine gun sentry",
+        "machine gun sentry",
+        "mg sentry"
+      ]
+    },
+    {
+      "name": "A/G-16 Gatling Sentry",
+      "code": "DURL",
+      "aliases": [
+        "a/g-16 gatling sentry",
+        "gatling sentry"
+      ]
+    },
+    {
+      "name": "A/AC-8 Autocannon Sentry",
+      "code": "DURULU",
+      "aliases": [
+        "a/ac-8 autocannon sentry",
+        "autocannon sentry"
+      ]
+    },
+    {
+      "name": "A/M-12 Mortar Sentry",
+      "code": "DURRD",
+      "aliases": [
+        "a/m-12 mortar sentry",
+        "mortar sentry"
+      ]
+    },
+    {
+      "name": "A/MLS-4X Rocket Sentry",
+      "code": "DURRL",
+      "aliases": [
+        "a/mls-4x rocket sentry",
+        "rocket sentry"
+      ]
+    },
+    {
+      "name": "A/M-23 EMS Mortar Sentry",
+      "code": "DURDR",
+      "aliases": [
+        "a/m-23 ems mortar sentry",
+        "ems mortar sentry",
+        "ems sentry"
+      ]
+    },
+    {
+      "name": "E/MG-101 HMG Emplacement",
+      "code": "DULRRL",
+      "aliases": [
+        "e/mg-101 hmg emplacement",
+        "hmg emplacement",
+        "heavy machine gun emplacement"
+      ]
+    },
+    {
+      "name": "FX-12 Shield Generator Relay",
+      "code": "DDLRLR",
+      "aliases": [
+        "fx-12 shield generator relay",
+        "shield generator relay",
+        "drop a shield",
+        "shield relay",
+        "shield bubble"
+      ]
+    },
+    {
+      "name": "A/ARC-3 Tesla Tower",
+      "code": "DURULR",
+      "aliases": [
+        "a/arc-3 tesla tower",
+        "tesla tower"
+      ]
+    },
+    {
+      "name": "MD-6 Anti-Personnel Minefield",
+      "code": "DLUR",
+      "aliases": [
+        "md-6 anti-personnel minefield",
+        "anti personnel minefield",
+        "minefield",
+        "mines"
+      ]
+    },
+    {
+      "name": "MD-14 Incendiary Mines",
+      "code": "DLLD",
+      "aliases": [
+        "md-14 incendiary mines",
+        "incendiary mines"
+      ]
+    },
+    {
+      "name": "Resupply",
+      "code": "DDUR",
+      "aliases": [
+        "resupply",
+        "resupply",
+        "call in resupply",
+        "drop resupply",
+        "need ammo",
+        "send ammo"
+      ]
+    },
+    {
+      "name": "Reinforce",
+      "code": "UDRLU",
+      "aliases": [
+        "reinforce",
+        "reinforce",
+        "call reinforcement",
+        "bring in a teammate",
+        "revive drop"
+      ]
+    },
+    {
+      "name": "SOS Beacon",
+      "code": "UDRU",
+      "aliases": [
+        "sos beacon",
+        "sos beacon",
+        "call sos",
+        "distress beacon"
+      ],
+      "_verify": "Sources disagree on this code - double check against the in-game display before relying on it."
+    },
+    {
+      "name": "Hellbomb",
+      "code": "DULDURDU",
+      "aliases": [
+        "hellbomb",
+        "hellbomb",
+        "call the hellbomb"
+      ]
+    },
+    {
+      "name": "Eagle Rearm",
+      "code": "UULUR",
+      "aliases": [
+        "eagle rearm",
+        "eagle rearm",
+        "rearm the eagle",
+        "reload eagle"
+      ]
+    },
+    {
+      "name": "SEAF Artillery",
+      "code": "RUUD",
+      "aliases": [
+        "seaf artillery",
+        "seaf artillery",
+        "call artillery"
+      ]
+    },
+    {
+      "name": "Super Earth Flag",
+      "code": "DUDU",
+      "aliases": [
+        "super earth flag",
+        "super earth flag",
+        "plant the flag"
+      ]
+    },
+    {
+      "name": "Upload Data",
+      "code": "DDUUU",
+      "aliases": [
+        "upload data",
+        "upload data"
+      ],
+      "_verify": "Sources disagree on this code - double check against the in-game display before relying on it."
+    },
+    {
+      "name": "Seismic Probe",
+      "code": "UULRDD",
+      "aliases": [
+        "seismic probe",
+        "seismic probe"
+      ]
+    },
+    {
+      "name": "SSSD Delivery",
+      "code": "DDDUU",
+      "aliases": [
+        "sssd delivery",
+        "sssd delivery"
+      ]
+    },
+    {
+      "name": "Illumination Flare",
+      "code": "RRLL",
+      "aliases": [
+        "illumination flare",
+        "illumination flare",
+        "light flare",
+        "flare"
+      ]
+    }
+  ]
+}
