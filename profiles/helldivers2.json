@@ -1,5 +1,5 @@
 {
-  "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems (Offensive + Supply sections, confirmed) and cross-referenced mission-stratagem sources. VERIFY each code against the in-game display before relying on it in a mission. The Defensive Emplacements section (Anti-Tank Emplacement, Tesla Tower, Machine Gun Emplacement, HMG Emplacement, EMS Mortar Sentry, Rocket Sentry, Incendiary Mines, AA Emplacement, etc.) was not fully captured from the source page and needs to be added manually - check the in-game codes and add entries in the same format. SOS Beacon has been confirmed in-game. Upload Data still has a _verify field because sources disagreed on its code. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better. ack (optional): spoken acknowledgement when the command matches - a single string, or a list of strings to vary the reply at random. Falls back to default_ack in settings.yaml if omitted. A few commands below have examples; add your own to taste.",
+  "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems and cross-referenced against helldivers.fandom.com/wiki/Stratagem_Codes - the vast majority of codes matched exactly across both sources, including SOS Beacon which has also been confirmed in-game. VERIFY each code against the in-game display before relying on it in a mission, especially anything not covered by either source (this profile includes several newer Warbond weapons/vehicles/exosuits not yet listed on either wiki page - not necessarily wrong, just unconfirmed). Upload Data still has a _verify field because the two sources disagree on its code (DDUUU vs LRUUU). AX/FLAM-75 Hot Dog (DULULL) does not appear on the fandom wiki at all - worth confirming in-game it's a real, distinct item from AX/TX-13 Dog Breath (DULURU), which is listed there. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better. ack (optional): spoken acknowledgement when the command matches - a single string, or a list of strings to vary the reply at random. Falls back to default_ack in settings.yaml if omitted. A few commands below have examples; add your own to taste.",
   "commands": [
     {
       "name": "Stim",
@@ -723,6 +723,46 @@
       ]
     },
     {
+      "name": "E/FLAM-40 Flame Sentry",
+      "code": "DURDUU",
+      "aliases": [
+        "e/flam-40 flame sentry",
+        "flame sentry"
+      ]
+    },
+    {
+      "name": "E/GL-21 Grenadier Battlement",
+      "code": "DRDLR",
+      "aliases": [
+        "e/gl-21 grenadier battlement",
+        "grenadier battlement"
+      ]
+    },
+    {
+      "name": "E/AT-12 Anti-Tank Emplacement",
+      "code": "DULRRR",
+      "aliases": [
+        "e/at-12 anti-tank emplacement",
+        "anti tank emplacement"
+      ]
+    },
+    {
+      "name": "MD-17 Anti-Tank Mines",
+      "code": "DLUU",
+      "aliases": [
+        "md-17 anti-tank mines",
+        "anti tank mines"
+      ]
+    },
+    {
+      "name": "MD-8 Gas Mines",
+      "code": "DLLR",
+      "aliases": [
+        "md-8 gas mines",
+        "gas mines"
+      ]
+    },
+    {
       "name": "FX-12 Shield Generator Relay",
       "code": "DDLRLR",
       "aliases": [
@@ -838,7 +878,7 @@
         "upload data",
         "upload data"
       ],
-      "_verify": "Sources disagree on this code - double check against the in-game display before relying on it."
+      "_verify": "Sources disagree on this code: original source gave DDUUU, helldivers.fandom.com/wiki/Stratagem_Codes gives LRUUU. Double check against the in-game display before relying on it."
     },
     {
       "name": "Seismic Probe",
@@ -854,6 +894,14 @@
       "aliases": [
         "sssd delivery",
         "sssd delivery"
+      ]
+    },
+    {
+      "name": "Hive Breaker Drill",
+      "code": "LUDRDD",
+      "aliases": [
+        "hive breaker drill",
+        "breaker drill"
       ]
     },
     {

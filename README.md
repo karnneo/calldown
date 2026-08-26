@@ -7,7 +7,15 @@ command like VoiceAttack does.
 Started as a Helldivers 2 stratagem caller, structured so any game can be
 added as its own profile.
 
-This is really early in development, not for public use.
+This is really early in development, not for public use. 
+I've hacked this together with a bit of python code and the hallucinations 
+of an AI.  Use at your own risk
+It's been developed by an Aussie so check the JSON file and 
+remove colourful language if your sensitive.
+
+If it's proves useful I'll develop it more and build it as a neat package an 
+maybe add a Linux version once Windows shits me too much an i move over to 
+gaming on linux.
 
 ## How it works
 
