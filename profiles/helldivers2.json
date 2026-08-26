@@ -1,5 +1,5 @@
 {
-  "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems (Offensive + Supply sections, confirmed) and cross-referenced mission-stratagem sources. VERIFY each code against the in-game display before relying on it in a mission. The Defensive Emplacements section (Anti-Tank Emplacement, Tesla Tower, Machine Gun Emplacement, HMG Emplacement, EMS Mortar Sentry, Rocket Sentry, Incendiary Mines, AA Emplacement, etc.) was not fully captured from the source page and needs to be added manually - check the in-game codes and add entries in the same format. Two entries (SOS Beacon, Upload Data) have a _verify field because sources disagreed on their codes. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better.",
+  "_comment": "code: sequence of U/D/L/R inputs entered while holding the stratagem-menu key. Compiled from helldivers.wiki.gg/wiki/Stratagems (Offensive + Supply sections, confirmed) and cross-referenced mission-stratagem sources. VERIFY each code against the in-game display before relying on it in a mission. The Defensive Emplacements section (Anti-Tank Emplacement, Tesla Tower, Machine Gun Emplacement, HMG Emplacement, EMS Mortar Sentry, Rocket Sentry, Incendiary Mines, AA Emplacement, etc.) was not fully captured from the source page and needs to be added manually - check the in-game codes and add entries in the same format. SOS Beacon has been confirmed in-game. Upload Data still has a _verify field because sources disagreed on its code. aliases are example phrasings for the semantic matcher; add more of your own, the more variety the better. ack (optional): spoken acknowledgement when the command matches - a single string, or a list of strings to vary the reply at random. Falls back to default_ack in settings.yaml if omitted. A few commands below have examples; add your own to taste.",
   "commands": [
     {
       "name": "Stim",
@@ -15,7 +15,8 @@
         "steam",
         "heel",
         "heels"
-      ]
+      ],
+      "ack": ["Stimming", "Stim deployed"]
     },
     {
       "name": "Orbital Precision Strike",
@@ -25,7 +26,8 @@
         "precision strike",
         "orbital precision",
         "snipe it from orbit"
-      ]
+      ],
+      "ack": "Precision strike, on the way"
     },
     {
       "name": "Orbital Gatling Barrage",
@@ -122,8 +124,10 @@
         "orbital napalm barrage",
         "napalm barrage",
         "orbital napalm",
-	"I love the smell"
-      ]
+	"night palm",
+	"Burn it all"
+      ],
+      "ack": "I Love the smell of Napalm in the morning"
     },
     {
       "name": "Orbital Railcannon Strike",
@@ -202,7 +206,8 @@
         "500kg",
         "eagle five hundred",
         "nuke it"
-      ]
+      ],
+      "ack": "500 kilo, danger close"
     },
     {
       "name": "MG-43 Machine Gun",
@@ -764,7 +769,8 @@
         "drop resupply",
         "need ammo",
         "send ammo"
-      ]
+      ],
+      "ack": "Resupply incoming"
     },
     {
       "name": "Reinforce",
@@ -775,7 +781,8 @@
         "call reinforcement",
         "bring in a teammate",
         "revive drop"
-      ]
+      ],
+      "ack": "Reinforcements called"
     },
     {
       "name": "SOS Beacon",
@@ -785,8 +792,7 @@
         "sos beacon",
         "call sos",
         "distress beacon"
-      ],
-      "_verify": "Sources disagree on this code - double check against the in-game display before relying on it."
+      ]
     },
     {
       "name": "Hellbomb",

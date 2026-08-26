@@ -35,5 +35,15 @@ menu_settle_delay_ms: 120    # pause after opening the menu, before the first di
 menu_release_delay_ms: 150   # pause after the last direction, before releasing the menu key
 jitter_ms: 20                 # random +/- variance added to every delay above, for a less robotic cadence (0 to disable)
 
+# --- Spoken acknowledgements (text-to-speech) ---
+# Uses Piper, a self-contained local neural TTS engine (not the OS's own
+# TTS voices) so this behaves identically on Windows/Linux/Mac.
+tts_enabled: true                    # speak a confirmation whenever a command is understood
+tts_voice: "en_US-lessac-medium"     # any name from https://huggingface.co/rhasspy/piper-voices
+                                      # auto-downloaded once into models/piper/ on first use (needs internet that one time)
+tts_speed: 1.0                        # <1.0 = faster speech, >1.0 = slower
+tts_volume: 1.0                       # multiplier on the spoken audio, e.g. 1.5 = louder
+default_ack: "Copy"                   # spoken when a matched command has no "ack" of its own in the profile
+
 # --- Logging ---
 log_unmatched_to: "unmatched_utterances.log"   # review this to add missing phrasings later

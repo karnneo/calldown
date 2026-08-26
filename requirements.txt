@@ -6,3 +6,4 @@ keyboard
 mouse
 pydirectinput
 PyYAML
+piper-tts

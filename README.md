@@ -15,8 +15,9 @@ This is really early in development, not for public use.
 2. `faster-whisper` transcribes the utterance locally (no cloud, no API key).
 3. The transcript is embedded with a sentence-transformer model and compared
    against every command's example phrases by cosine similarity.
-4. If there's a confident, unambiguous match, the corresponding key sequence
-   is dispatched to the game.
+4. If there's a confident, unambiguous match, the software speaks a short
+   acknowledgement and the corresponding key sequence is dispatched to the
+   game.
 
 Everything runs locally — no internet connection needed at runtime.
 
@@ -91,6 +92,46 @@ stratagem menu, e.g. Stim) use `key` instead of `code`:
 ```
 
 - `key`: the single key to tap directly, matching your in-game keybind.
+
+## Spoken acknowledgements
+
+When a command is confidently matched, Calldown speaks it back to you so
+you know it heard you correctly without having to look at the console.
+
+This uses [Piper](https://github.com/OHF-Voice/piper1-gpl), a small
+self-contained neural TTS engine — not the operating system's own voices
+— so it sounds and behaves the same on Windows, Linux, and Mac, and
+doesn't depend on any OS-level voice setup (unlike Windows SAPI5, which
+sometimes has no usable voices registered out of the box). The voice
+model set in `tts_voice` is downloaded once into `models/piper/` the
+first time you run Calldown (needs internet for that one download; fully
+offline after that).
+
+Add an `"ack"` field to any command in a profile to customize the reply:
+
+```json
+{
+  "name": "Stim",
+  "key": "v",
+  "aliases": ["stim", "heal", "use stim"],
+  "ack": ["Stimming", "Stim deployed"]
+}
+```
+
+- A single string always says the same thing.
+- A list of strings picks one at random each time, for variety.
+- If a command has no `ack`, `default_ack` in `settings.yaml` is spoken
+  instead.
+
+Tune the voice or turn acknowledgements off entirely in `settings.yaml`:
+
+- `tts_enabled` — set to `false` to disable spoken acknowledgements.
+- `tts_voice` — any voice name from
+  [the Piper voices list](https://huggingface.co/rhasspy/piper-voices)
+  (e.g. `"en_US-lessac-medium"`, `"en_GB-alan-medium"`).
+- `tts_speed` — `<1.0` = faster speech, `>1.0` = slower.
+- `tts_volume` — multiplier on the spoken audio, e.g. `1.5` = louder.
+- `default_ack` — fallback phrase for commands without their own `ack`.
 
 ## Adding a new game
 

@@ -14,6 +14,7 @@ from audio import record_while_held
 from dispatcher import Dispatcher
 from matcher import IntentMatcher
 from stt import Transcriber
+from tts import Speaker, resolve_ack
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 
@@ -57,6 +58,16 @@ def main():
         cfg.get("jitter_ms", 0),
     )
 
+    voice_dir = os.path.join(ROOT_DIR, "models", "piper")
+    speaker = Speaker(
+        cfg.get("tts_enabled", True),
+        cfg.get("tts_voice", "en_US-lessac-medium"),
+        voice_dir,
+        cfg.get("tts_speed", 1.0),
+        cfg.get("tts_volume", 1.0),
+    )
+    default_ack = cfg.get("default_ack", "")
+
     log_path = os.path.join(ROOT_DIR, cfg["log_unmatched_to"])
 
     print(f"[ready] hold '{cfg['ptt_key']}' and say a command. Ctrl+C to quit.")
@@ -84,6 +95,7 @@ def main():
                 f"[match] '{text}' -> {result.command['name']} "
                 f"(score={result.score:.2f})"
             )
+            speaker.speak(resolve_ack(result.command, default_ack))
             if "code" in result.command:
                 dispatcher.execute(result.command["code"])
             else:
