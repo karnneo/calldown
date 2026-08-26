@@ -70,7 +70,9 @@ python src\main.py
 1. In `settings.yaml`, set `ptt_key` to your push-to-talk key/button.
 2. Confirm `direction_keys` in `settings.yaml` matches your in-game control
    scheme (default Helldivers 2 keybind is WASD while holding Left Ctrl).
-3. **Verify the codes in `profiles/helldivers2.json` against what the game
+   I'd suggest changing them to Arrow keys in the game so you can move an
+   call in strats
+4. **Verify the codes in `profiles/helldivers2.json` against what the game
    shows on your loadout screen.** Seeded with commonly-cited codes, but
    double-check before relying on it mid-mission — patches can shift things.
 
